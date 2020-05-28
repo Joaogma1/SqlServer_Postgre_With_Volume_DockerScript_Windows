@@ -1,0 +1,1 @@
+   docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=Pass@123" -p 1433:1433 -v D:/DockerPersist/data:/var/opt/mssql/data -v D:/DockerPersist/log:/var/opt/mssql/log -v D:/DockerPersist/secrets:/var/opt/mssql/secrets -d mcr.microsoft.com/mssql/server:2019-CU3-ubuntu-18.04

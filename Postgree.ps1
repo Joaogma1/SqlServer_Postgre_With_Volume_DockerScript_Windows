@@ -1,0 +1,1 @@
+docker-compose -f PostgreeCompose.yml up -d
