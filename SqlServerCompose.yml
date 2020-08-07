@@ -1,0 +1,15 @@
+version: '3.3'
+
+services:
+  sqlserver-compose:
+    image: mcr.microsoft.com/mssql/server
+    environment:
+      MSSQL_SA_PASSWORD: "Pass@123"
+      ACCEPT_EULA: "Y"
+    ports:
+      - 1433:1433
+    volumes:
+      - D:/DockerPersist/data:/var/opt/mssql/data
+      - D:/DockerPersist/log:/var/opt/mssql/log
+      - D:/DockerPersist/secrets:/var/opt/mssql/secrets
+    network_mode: bridge

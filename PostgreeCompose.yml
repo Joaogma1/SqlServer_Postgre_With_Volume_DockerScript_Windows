@@ -4,10 +4,10 @@ services:
   postgres-compose:
     image: postgres
     environment:
-      POSTGRES_PASSWORD: "123"
+      POSTGRES_PASSWORD: "docker"
       PGDATA: /var/lib/postgresql/data/pgdata
     ports:
-      - "15432:5432"
+      - "5432:5432"
     volumes:
       - D:/DockerPersist/PostegreePersist/PostgreSQL
     networks:
